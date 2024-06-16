@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father's Day Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div class="birthdayCard">
+        <div class="cardFront">
+            <div class="front-text">
+                <h3 class="happy">HAPPY FATHER'S DAY ❤︎</h3>
+            </div>
+            <div class="wrap-deco">
+                <div class="decorations"></div>
+                <div class="decorationsTwo"></div>
+            </div> 
+            <div class="photo">
+                <img src="Dad n me.png" alt="Father's Day Photo">
+            </div>
+            <button class="playButton" onclick="playSong()">Play Song</button>
+        </div>
+        
+        <div class="cardInside">
+            <div class="inside-text">
+                <h3 class="happy1">HAPPY</h3>
+                <h2 class="bday">FATHER'S DAY</h2> 
+                <h3 class="toyou">to my daddy⭐ </h3>              
+            </div>
+            <div class="wishes">
+                <p>Daddy,</p>
+                <p>I'm so lucky to have you as my dad. Thank you for all the ways you go above and beyond every day for our family.</p>
+                <p class="fromJoan">from Joan</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="song" loop>
+        <source src="I Love My Daddy - THE KIBOOMERS Preschool Songs & Nursery Rhymes for Fathers Day.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playSong() {
+            var audio = document.getElementById('song');
+            audio.play();
+        }
+    </script>
+</body>
+</html>

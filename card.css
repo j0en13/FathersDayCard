@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('backgounr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.birthdayCard {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 5s;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .15), 0 10px 100px rgba(0, 0, 0, 0.3);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-150deg);
+}
+
+.birthdayCard:hover .front-text {
+  display: none;
+}
+
+.cardFront {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .13), 30px 0 50px rgba(0, 0, 0, 0.1);
+  transition: .4s;
+}
+
+.front-text {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-image: linear-gradient(400deg, #ffd856 0%, #f98c6e 100%);
+  transition: 0.1s;
+  padding: 5px;
+  height:30px;
+}
+
+.photo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: 97%;
+  object-fit: cover;
+}
+
+.playButton {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #f98c6e;
+  color: rgb(255, 250, 250);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.playButton:hover {
+  background-color: #ffd856;
+}
+
+.cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.inside-text {
+  position: relative;
+  top: -160px;
+  transform: scale(0.7);
+}
+
+.wishes {
+  position: relative;
+  top: -100px;
+  margin: 25px;
+}
+
+p {
+  font-family: 'Brush Script MT', cursive;
+  color: #333;
+}
+
+.fromJoan {
+  margin-top: 20px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 14px;
+  text-align: right;
+  color: #333;
+}
+
+.happy1, .toyou {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  backface-visibility: hidden;
+  font-size: 30px;
+}
+
+.happy1 {
+  top: 198px;
+}
+
+.toyou {
+  top: 123px;
+}
+
+.bday {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  top: 163px;
+}
